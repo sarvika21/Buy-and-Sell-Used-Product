@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickSell - Buy & Sell</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🛍️ QuickSell</h1>
+        <p>Buy and Sell Used Products</p>
+    </header>
+
+
+    <main>
+
+        <!-- Sell Product Section -->
+        <section class="sell-section">
+
+            <h2>Sell Your Product</h2>
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="Product Name"
+            >
+
+            <input
+                type="text"
+                id="sellerName"
+                placeholder="Seller Name"
+            >
+
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Price"
+            >
+
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Books">Books</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <textarea
+                id="description"
+                placeholder="Product Description">
+            </textarea>
+
+            <button onclick="addProduct()">
+                Sell Product
+            </button>
+
+        </section>
+
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h2>Find Products</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search products..."
+                onkeyup="displayProducts()"
+            >
+
+        </section>
+
+
+        <!-- Products Section -->
+        <section class="products-section">
+
+            <h2>Available Products</h2>
+
+            <div id="productsContainer">
+                <!-- Products appear here -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 QuickSell | Buy & Sell Used Products</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
