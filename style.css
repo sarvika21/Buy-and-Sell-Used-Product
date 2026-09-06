@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+
+/* Sections */
+
+.sell-section,
+.search-section,
+.products-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Input fields */
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #4caf50;
+    color: white;
+
+    border: none;
+    padding: 11px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+
+/* Product container */
+
+#productsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* Product card */
+
+.product-card {
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    background-color: #fafafa;
+}
+
+.product-card h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e65100;
+
+    margin: 10px 0;
+}
+
+.category {
+    display: inline-block;
+
+    background-color: #e8f5e9;
+    color: #388e3c;
+
+    padding: 5px 10px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    background-color: #2196f3;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #555;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    #productsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+}
